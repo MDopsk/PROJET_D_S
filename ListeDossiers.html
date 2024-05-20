@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fd67ba6a33.js" crossorigin="anonymous"></script>
     <style>
         .form {
             max-width:800px;
@@ -22,7 +23,15 @@
             align-items:center;
             margin-top:60px;
         }
-        
+        .info{
+          color:blue
+        }
+        .edit {
+          color:green
+        }
+        .delete {
+          color:red
+        }
     </style>
 
     <title>Site Gestion Stage</title>
@@ -55,16 +64,39 @@
       </div>
       <div class="form container">
        <h3>Liste Dossiers Etudient</h3>
-        
-       <ul class="list-group">
-        <li class="list-group-item"> Sujet : Gestion des equip resaux - domaine : réseaux inf <a class="btn btn-success" href="#" role="button">consulter</a><a class="btn btn-success" href="#" role="button">Modifier</a><a class="btn btn-danger" href="#" role="button">Supprimer</a></li>
-        <li class="list-group-item"> Sujet : Gestion du stagaires - domaine : web Apk  <a class="btn btn-success" href="#" role="button">consulter</a><a class="btn btn-success" href="#" role="button">Modifier</a><a class="btn btn-danger" href="#" role="button">Supprimer</a></li>
-        <li class="list-group-item"> Sujet : Gestion du perde du cliens - domaine : sc des données <a class="btn btn-success" href="#" role="button">consulter</a><a class="btn btn-success" href="#" role="button">Modifier</a><a class="btn btn-danger" href="#" role="button">Supprimer</a></li>
-        <li class="list-group-item"> 4 </li>
-        
-      </ul>
+       <h4>Etudiant : Rayek MedAmin</h4>
+       <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Sujet</th>
+            <th scope="col">Encadrant</th>
+            <th scope="col">Domaine</th>
+            <th scope="col">Operations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Initiation stage</th>
+            <td>Gestion Stage</td>
+            <td>Adraibi Adil</td>
+            <td>Web apk</td>
+            <td>
+              <a href="#">
+              <i class="info fa-solid fa-circle-info"></i>
+              </a>
+              <a href="editDossier.html">
+              <i class="edit fa-solid fa-pen"></i>
+              </a>
+              <a href="#">
+              <i class="delete fa-solid fa-trash"></i>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">Ajouter nouveau Dossier</button>
+        <a class="btn btn-primary" href="InfDossier.html">Ajouter Nouveau Dossier</a>
      </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
